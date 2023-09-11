@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> HTML_Task_5 </title>
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+            }
+            td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            label {
+                font-weight: bold;
+            }
+            .registerbtn {
+                background-color: #efefef;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+            .button-container {
+            text-align: center;
+            }
+            .last-row {
+            text-align: right; /* Align text to the extreme right */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <br>
+        <br>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label> Firstname:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" size="170"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Last Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" size="170"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Email: </label> 
+                    </td>
+                    <td>
+                        <input type="email" name="email" size="170"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="male"/> Male 
+                        <input type="radio" name="female"/> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age:</label>
+                    </td>
+                    <td>
+                        <input type="age" name="age" size="170%"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone Number:</label> 
+                    </td>
+                    <td>
+                        <input type="text" name="phone" size="170%"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label>Address:</label> 
+                    </td>
+                    <td valign="top">
+                        <textarea cols="140" rows="5" value="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Country:</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="South Korea">South Korea</option>
+                            <!-- add more options for other countries -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Language Known:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="English"/>English 
+                        <input type="checkbox" name="Kannada"/> Kannada
+                        <input type="checkbox" name="Hindi"/> Hindi
+                        <input type="checkbox" name="Telugu"/> Telugu
+                        <!-- add more options for other languages -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="terms"/>Hereby I declare all the given details are true
+                    </td>
+                </tr>
+                <tr class="last-row">
+                    <td colspan="2">
+                        Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website
+                    </td>
+                </tr>
+            </table>
+            <div class="button-container">
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+        </form>
+    </body>
+</html>
+
